@@ -1,0 +1,75 @@
+/* Variables de marca y Reset */
+:root {
+    --primary-color: #004d40;    /* Verde Selva (Elegancia) */
+    --accent-color: #ffb300;     /* Dorado Mango (Botones/Acentos) */
+    --secondary-color: #00acc1;  /* Turquesa Tropical */
+    --danger-color: #d32f2f;     /* Rojo Hibisco (Alertas) */
+    --bg-color: #f4f7f6;         /* Blanco Arena */
+    --text-color: #2c3e50;       /* Gris Oscuro Profesional */
+    --white: #ffffff;
+    
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --border-radius: 12px;
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Utilidad para centrar todo el contenido */
+.centered-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 80vh; /* Para que el contenido respire */
+    padding: 20px;
+}
+
+/* Botones Grandes y Elegantes */
+.btn-large {
+    padding: 18px 40px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: var(--transition);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: var(--shadow);
+    width: 100%;
+    max-width: 300px;
+    margin: 10px 0;
+}
+
+.btn-large:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+button[type="submit"], .btn-large.primary {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+}
+
+.btn-large.secondary {
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+.btn-large.danger {
+    background-color: var(--danger-color);
+    color: var(--white);
+}

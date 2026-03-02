@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: google_route
+          uri: https://www.google.com
+          predicates:
+            - Path=/google/** # Cambiado de /search/ a /google/
+          filters:
+            # Esto quita el prefijo "/google" antes de enviar la petición a Google
+            # Ejemplo: localhost:8080/google/search?q=test -> google.com/search?q=test
+            - RewritePath=/google/(?<segment>.*), /$\{segment}
