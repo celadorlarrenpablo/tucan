@@ -1,0 +1,18 @@
+server:
+  port: 80
+  servlet:
+    context-path: /service-registry
+
+spring:
+  application:
+    name: service-registry
+
+eureka:
+  instance:
+    hostname: ${EUREKA_INSTANCE_HOSTNAME:localhost}
+    prefer-ip-address: false 
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://tucan.local/service-registry/eureka/
