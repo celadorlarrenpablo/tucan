@@ -1,13 +1,13 @@
 services:
-  api-gateway:
+  servicio-prueba:
     build: .
-    container_name: api-gateway
+    container_name: servicio-prueba
     ports:
-      - "8060:80"
+      - "8854:80"
     networks:
       tucan-net:
         aliases:
-          - api-gateway
+          - servicio-prueba
 
 networks:
   tucan-net:

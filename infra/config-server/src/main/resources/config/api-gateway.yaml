@@ -7,3 +7,13 @@ eureka:
   client:
     service-url:
       defaultZone: http://service-registry:80/eureka/
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: servicio-prueba
+          uri: http://servicio-prueba:80
+          predicates:
+            - Path=/api/v1/empleados/**
+            - Path=/api/v1/empleados

@@ -1,7 +1,10 @@
 server:
   port: 80
-  servlet:
-    context-path: /config-server
+
+spring:
+  cloud:
+    discovery:
+      enabled: true
 
 eureka:
   instance:

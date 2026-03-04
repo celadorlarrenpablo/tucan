@@ -3,4 +3,4 @@ spring:
     name: servicio-prueba
   config:
     import:
-    - "optional:configserver:http://config-server:80/config-server/"
+      - "optional:configserver:http://config-server:80/config-server/"
