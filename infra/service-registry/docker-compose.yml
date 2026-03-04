@@ -4,13 +4,10 @@ services:
     container_name: service-registry
     ports:
       - "8761:80"
-    environment:
-      - EUREKA_INSTANCE_HOSTNAME=service-registry
     networks:
       tucan-net:
         aliases:
-          - tucan.local
-
+          - service-registry 
 
 networks:
   tucan-net:

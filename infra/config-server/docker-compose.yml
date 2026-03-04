@@ -1,0 +1,14 @@
+services:
+  config-server:
+    build: .
+    container_name: config-server
+    ports:
+      - "8762:80"
+    networks:
+      tucan-net:
+        aliases:
+          - config-server
+
+networks:
+  tucan-net:
+    external: true
