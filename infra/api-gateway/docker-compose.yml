@@ -1,0 +1,14 @@
+services:
+  api-gateway:
+    build: .
+    container_name: api-gateway
+    ports:
+      - "8763:80"
+    networks:
+      tucan-net:
+        aliases:
+          - api-gateway
+
+networks:
+  tucan-net:
+    external: true
