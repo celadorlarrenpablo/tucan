@@ -4,6 +4,9 @@ spring:
   config:
     import:
     - "optional:configserver:http://config-server:80/config-server/"
+  threads:
+    virtual:
+      enabled: true
 
 eureka:
   client:
