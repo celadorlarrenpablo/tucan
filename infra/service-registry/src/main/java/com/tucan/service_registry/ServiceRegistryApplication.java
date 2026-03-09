@@ -1,4 +1,4 @@
-package com.tucanbank.service_registry;
+package com.tucan.service_registry;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

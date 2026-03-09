@@ -8,6 +8,10 @@ services:
       tucan-net:
         aliases:
           - config-server
+    deploy:
+      resources:
+        limits:
+          memory: 400M
 
 networks:
   tucan-net:

@@ -1,10 +1,11 @@
-package com.tucanbank.servicio_prueba.repo;
-
-import com.tucanbank.servicio_prueba.modelo.Empleado;
-import org.springframework.stereotype.Repository;
+package com.tucan.servicio_prueba.repo;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import org.springframework.stereotype.Repository;
+
+import com.tucan.servicio_prueba.modelo.Empleado;
 
 @Repository
 public class RepoEmpleados {

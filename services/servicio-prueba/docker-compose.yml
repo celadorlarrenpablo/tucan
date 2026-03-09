@@ -8,6 +8,10 @@ services:
       tucan-net:
         aliases:
           - servicio-prueba
+    deploy:
+      resources:
+        limits:
+          memory: 300M
 
 networks:
   tucan-net:

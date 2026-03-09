@@ -8,6 +8,10 @@ services:
       tucan-net:
         aliases:
           - api-gateway
+    deploy:
+      resources:
+        limits:
+          memory: 400M
 
 networks:
   tucan-net:

@@ -1,10 +1,10 @@
-package com.tucanbank.service_registry;
+package com.tucan.api_gateway;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ServiceRegistryApplicationTests {
+class ApiGatewayApplicationTests {
 
 	@Test
 	void contextLoads() {

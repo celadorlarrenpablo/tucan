@@ -1,13 +1,14 @@
-package com.tucanbank.servicio_prueba.controlador;
+package com.tucan.servicio_prueba.controlador;
 
 
-import com.tucanbank.servicio_prueba.modelo.Empleado;
-import com.tucanbank.servicio_prueba.repo.RepoEmpleados;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.coyote.Response;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import com.tucan.servicio_prueba.modelo.Empleado;
+import com.tucan.servicio_prueba.repo.RepoEmpleados;
 
 import java.net.URI;
 import java.util.List;

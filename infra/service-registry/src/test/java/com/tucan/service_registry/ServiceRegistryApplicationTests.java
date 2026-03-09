@@ -1,10 +1,10 @@
-package com.tucanbank.config_server;
+package com.tucan.service_registry;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ConfigServerApplicationTests {
+class ServiceRegistryApplicationTests {
 
 	@Test
 	void contextLoads() {

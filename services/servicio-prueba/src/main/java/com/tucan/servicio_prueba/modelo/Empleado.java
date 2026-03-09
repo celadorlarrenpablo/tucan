@@ -1,4 +1,4 @@
-package com.tucanbank.servicio_prueba.modelo;
+package com.tucan.servicio_prueba.modelo;
 
 
 import lombok.Builder;
