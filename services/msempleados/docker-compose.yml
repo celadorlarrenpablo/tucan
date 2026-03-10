@@ -2,8 +2,8 @@ services:
   msempleados:
     build: .
     container_name: msempleados
-    ports:
-      - "8854:80"
+    expose:
+      - "80"
     networks:
       tucan-net:
         aliases:
