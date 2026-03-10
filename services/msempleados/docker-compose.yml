@@ -1,13 +1,13 @@
 services:
-  servicio-prueba:
+  msempleados:
     build: .
-    container_name: servicio-prueba
+    container_name: msempleados
     ports:
       - "8854:80"
     networks:
       tucan-net:
         aliases:
-          - servicio-prueba
+          - msempleados
     deploy:
       resources:
         limits:

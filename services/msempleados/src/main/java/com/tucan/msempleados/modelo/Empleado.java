@@ -1,4 +1,4 @@
-package com.tucan.servicio_prueba.modelo;
+package com.tucan.msempleados.modelo;
 
 
 import lombok.Builder;

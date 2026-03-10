@@ -1,0 +1,18 @@
+services:
+  servicio-prueba:
+    build: .
+    container_name: msdepartamentos
+    ports:
+      - "8855:80"
+    networks:
+      tucan-net:
+        aliases:
+          - msdepartamentos
+    deploy:
+      resources:
+        limits:
+          memory: 300M
+
+networks:
+  tucan-net:
+    external: true

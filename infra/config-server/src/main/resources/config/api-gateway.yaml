@@ -12,8 +12,11 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: servicio-prueba
-          uri: http://servicio-prueba:80
-          predicates:
-            - Path=/api/v1/empleados/**
-            - Path=/api/v1/empleados
+          - id: msempleados
+            uri: lb://msempleados
+            predicates:
+              - Path=/api/v1/empleados/**
+          - id: msdepartamentos
+            uri: lb://msdepartamentos
+            predicates:
+              - Path=/api/v1/departamentos/**
