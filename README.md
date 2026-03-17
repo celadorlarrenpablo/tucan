@@ -1,5 +1,4 @@
 # Tucan
-
 Este es el repositorio en el que subo poco a poco los avances en mi aprendizaje de la arquitectura de software.
 Intento simular un sistema real corporativo y serio, que cumpla con estandares de la industria.
 
@@ -10,3 +9,7 @@ Intento simular un sistema real corporativo y serio, que cumpla con estandares d
 
 ## 🛠️ Instalación
 Estoy aún preparando una página web con un dominio público para poder hacerla visible sin que sea necesario instalarlo, pero invito a quien quiera a descargar el repositorio.
+Se necesitará tener Docker, Maven y Java, personalmente uso las versiones: 
+- Docker: 29.3.0
+- Maven: 3.8.7
+- Java: 21.0.10
